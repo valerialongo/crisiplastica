@@ -1,0 +1,39 @@
+nav{background-color:#7E314D; font-family: 'Josefin Sans', sans-serif; font-size:22px;}
+
+#contenitore{padding:0px; height:1200px; position:absolute; width:100; background-color:#E5D6DB;}
+
+#immagine1{
+        height: 60%;
+        margin-top: 55px;
+        background-position:0 -5em 0 0;
+        background-repeat: no-repeat;
+        background-size:100%;
+        background-attachment: fixed;
+        background-image: url(../Images/img-iniziale.jpg);
+}
+
+#logo-cp-grande{
+        padding-top:22%; 
+        width:50%;
+        margin-left:25%;
+        position:absolute;
+}
+
+ @media screen and (max-width: 575px) {
+            #immagine1 {
+                background-image: url(../Images/img-iniziale-mobile.jpg);
+                background-position:0 -3em 0 0; 
+                height:50%;
+                }
+            #contenitore {
+                height: 750px;    
+                }
+            #logo-cp-grande{
+                padding-top:40%;
+                }
+            
+}
+
+@media (min-width: 768px){ nav{height: 56px;} }
+}     
+
