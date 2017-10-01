@@ -1,7 +1,63 @@
+
+  <?php
+  session_start();
+include 'conn.php';
+  
+if(isset($_SESSION['email'])){
+    $email = $_SESSION['email'];
+}
+
+    if (!isset($_SESSION["email"])) {
+      header('Location: login.php');
+      exit;
+    }
+
+  if (!isset($_SESSION["carrello"])) {
+    $_SESSION["carrello"]="";
+  }
+
+
+  if ($_SESSION["carrello"]=="") {
+    $carrello=array();
+  } else {
+    $carrello=explode(" ",trim($_SESSION["carrello"]));
+    $carrello=array_unique($carrello);
+  }
+
+  
+
+  $totale=0;
+  if (count($carrello)>0) {
+    $carrello_string=implode(",", $carrello);
+    $query_carrello="select * from articoli_cp where id in ($carrello_string)";
+  }
+
+
+$sql = "SELECT name FROM users WHERE email = '$email'";
+$sel_data = mysqli_query($conn, $sql);
+if (!$sel_data){
+    die('Si è verificato un errore durante la selezione di alcuni dati dal database');
+    
+}
+else{
+    $row = mysqli_fetch_row($sel_data);
+    $name = $row[0];   
+}
+
+    
+?>
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
-  <title>CLAShop</title>
+  <title>Crisiplastica</title>
 
   <script src="js/jquery-1.10.1.js"></script>
 
@@ -20,37 +76,7 @@
 </head>
 <body>
 
-  <?php
-  session_start();
 
-  if (!isset($_SESSION["email"])) {
-   header('Location: login.php');
- exit;
-  }
-
-  if (!isset($_SESSION["carrello"])) {
-    $_SESSION["carrello"]="";
-  }
-
-
-  if ($_SESSION["carrello"]=="") {
-    $carrello=array();
-  } else {
-    $carrello=explode(" ",trim($_SESSION["carrello"]));
-    $carrello=array_unique($carrello);
-  }
-
-  $connessione = new mysqli("localhost","root","root","prova");
-
-
-  $totale=0;
-  if (count($carrello)>0) {
-    $carrello_string=implode(",", $carrello);
-    $query_carrello="select * from articoli_cp where id in ($carrello_string)";
-  }
-
-
-  ?>
 <a href="index.php">Crisiplastica</a>
     <div>
       <button  type="submit"><a href="registrati.php">Registrati</a></button>
@@ -59,20 +85,14 @@
     <div>
        <form  role="search" action="ricerca.php" method="post">
           <input name="ricerca" type="text" class="form-control" placeholder="Cerca">
-          <button  type="submit"></button>  
+          <button  type="submit">Cerca</button>  
       </form>
     </div>
-
-   <div>
-    <p style="text-align: right;">Non sei <?php echo $_SESSION["email"]; ?>?<a href="logout.php"> esci</a></p>
-      </div>
-  
-
-
-
-    <div >
-    
-              
+    <div>
+     
+         <p style="text-align: right;"> Bentornato <?php echo $name; ?></p>
+ <p style="text-align: right;"> Non sei <?php echo $name; ?>?<a href="logout.php"> esci</a></p>
+        <p>         
       
     </div>
 
@@ -81,6 +101,8 @@
               <h3>Carrello</h3>
             </div>
             <?php
+            $connessione = new mysqli("localhost","root","root","prova");
+
 
             if (count($carrello)>0) {
 
@@ -109,7 +131,7 @@
 
                 echo "<tr>";
                 echo "<td>$i</td>";
-                echo "<td><a href='note_realizzazione.php?id=$id'>$nome</a></td>";
+                echo "<td>$nome</td>";
                 echo "<td>$note_realizzazione</td>";            
                 echo "<td>$prezzo euro</td>";
                 echo "</tr>";
