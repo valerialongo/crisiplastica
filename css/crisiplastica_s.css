@@ -1,0 +1,1011 @@
+nav{background-color:#7E314D; font-family: 'Josefin Sans', sans-serif; font-size:22px; font-weight: 100;}
+
+#search{
+    width:200px;
+    height: 35px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 100;
+}
+
+.search_btn{
+    border: none;
+}
+
+#contenitore{padding:0px; height:1200px; width:100; background-color:#E5D6DB;}
+
+#immagine1{
+        height: 60%;
+        margin-top: 55px;
+        background-position:0 -5em 0 0;
+        background-repeat: no-repeat;
+        background-size:100%;
+        background-image: url(../Images/img-iniziale.jpg);
+}
+
+#logo-cp-grande{
+        padding-top:22%; 
+        width:50%;
+        margin-left:25%;
+        position:absolute;
+}
+
+#sottopancia{
+        padding: 75px 0;
+}
+
+.video {
+	height: 0;
+	padding-bottom: 56.25%;
+	position: relative;
+  }
+.video iframe,
+.video object,
+.video embed {
+	height: 100%;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+#video_box{display: block;}
+
+#testo_sottop{
+    text-align: left; 
+    padding-top: 7px;
+    padding-right: 25px;
+    font-family: 'Josefin Sans', sans-serif; 
+    font-weight: 300;
+    font-size:29px;
+    }
+
+.lavori{
+    background-color: #EFE6E9;
+    height: 650px;
+    width: 100%;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;   
+}
+
+.img_lavori_sx{
+    float: left;
+    width: 50%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size:cover;
+    border:0px solid red;
+}
+.testo_lavori_dx{
+    float: right;
+    height: 100%;
+    width: 50%;
+}
+
+.testo_lavori_sx{
+    float: left;
+    height: 100%;
+    width: 50%;
+}
+
+.testo1{
+    width: 100%;
+    font-weight: 400;
+    font-size: 28px;
+    margin-top: 10%;
+    padding: 0 10% 0 10%;
+}
+
+.testo2{
+    width: 100%;
+    font-weight: 300;
+    font-size: 22px;
+    margin-top: 5%;
+    padding: 0 10% 0 10%; 
+}
+
+.img_lavori_dx{
+    float: right;
+    width: 50%;
+    height: 100%;
+    background-repeat: no-repeat;
+    border:0px solid blue;
+    
+}
+
+.lavori_titolo{
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    color:#000000;
+    font-size:90px;
+    padding-top: 200px;
+    border: 0px solid blue;
+}
+
+.galleria{
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    color:#000000; 
+    border: 0px solid red;
+    font-size: 20px;    
+   
+}
+
+#img_lavori_anatomia{
+    background-image: url(../Images/copertina_anatomia.jpg);
+    background-position:-25em 0;
+}
+
+#img_lavori_lifecasting{
+    background-image: url(../Images/copertina_lifecasting.JPG);
+    background-size:cover;
+    background-position: 4em -5em; 
+}
+
+#img_lavori_tattoo{
+    background-image: url(../Images/copertina_tattoo.JPG);
+    background-position:-60em 2em;
+    background-size: cover;
+}
+
+#img_lavori_mask{
+    background-image: url(../Images/copertina_mask.jpg);
+    background-position:0em -5em;
+    background-size: cover;
+}
+
+#img_lavori_creature{
+    background-image: url(../Images/copertina_creature.JPG);
+    background-position:0em -40em;
+    background-size: cover;
+}
+
+#img_lavori_arredo{
+    background-image: url(../Images/copertina_arredo.jpg);
+    background-position:-25em 0; 
+}
+
+#img_lavori_scenografie{
+    background-image: url(../Images/copertina_scenografie.jpg);
+    background-position:-50em 0em;
+    background-size: cover;
+}
+
+#img_lavori_food{
+    background-image: url(../Images/copertina_food.jpg);
+    background-position: -10em 0em;
+    background-size: cover;
+}
+
+#img_lavori_props{
+    background-image: url(../Images/copertina_props.jpg);
+    background-position: -35em -10em;
+    background-size: cover;
+}
+
+.s_grande{
+    display: block;
+    background-attachment: fixed;
+}
+
+.s_piccolo{
+    display: none;
+}
+
+.s_mobile{
+    display: none;
+}
+
+#biografia{
+    background-color: #E5D6DB;
+    height: 850px;
+    width: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#titolo_biografia{
+    text-align:center;
+    font-weight: 400;
+    font-size: 50px;
+    margin-top: 4%;
+}
+
+#bio_cont_foto{
+    margin-top: 3%;
+    border: 0px solid yellow;
+}
+
+#bio_foto{
+    height: 600px;
+    float: right;
+}
+
+#bio_testo{
+    padding-top: 0.5%;
+    border: 0px solid blue;
+    margin-top: 3%;
+    font-weight: 300;
+    font-size: 25px;
+}
+
+#art-work{
+        height: 400px;
+        width: 100%;
+        background-position:0 -35em;
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-image: url(../Images/art-work.jpg);
+        text-align: center;
+}
+
+#shop_art-work{
+        width: 700px;
+        margin-top: 60px;
+        
+}
+
+#testo1_art-work{
+        text-align: center;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 400;
+        color:white;
+        font-size:120px;
+        padding-top: 90px;
+        border: 0px solid blue;
+}
+
+#testo2_art-work{
+        text-align: center;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 400;
+        color:white; 
+        border: 0px solid red;
+        font-size: 20px;
+    
+}
+
+#contatti{
+        height: 710px;
+        background-color:#E5D6DB;
+        font-family: 'Josefin Sans', sans-serif;
+    
+}
+
+#contatti_contenuto{
+    margin-top: 3%;
+}
+
+#contatti_form{
+    width:100%; 
+    text-align: center;
+    font-weight: 100;
+    font-size: 25px;  
+}
+
+#form_messaggio{
+    height: 100px;
+}
+
+#invia{
+    font-size: 25px;
+    width: 250px;
+    height: 40px;
+    padding: 0.4rem 0.75rem;
+}
+
+#testo_contatti{
+    padding-top:9%;
+    font-weight: 100;
+    font-size: 28px;
+    text-align: center;
+}
+
+.form-control {
+    font-size: 1.3rem;
+}
+
+#footer{
+    height: 350px;
+    background-color: #000000;
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    padding-top: 55px;
+    font-weight:100;
+}
+
+#footer_logo{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 25px;
+}
+
+#footer_logo_img{
+    height:34px; 
+}
+
+#footer_p{
+    margin-left: 50px;
+    padding-top: 15px;
+    padding-bottom: 0;
+}
+
+.b_left{
+    margin-left:100px;   
+}
+
+#footer_cornice_contatti{
+    border: 1px solid #fff;
+}
+
+#footer_contatti{
+    padding-top: 11px;
+    text-align: left;
+    font-size: 20px;
+    border: 0px solid red;
+}
+
+#footer_social{
+    text-align: center;
+    margin-top:35px;    
+}
+
+.footer_social_img{
+    height: 55px;
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    #testo_sottop{
+       font-size:24px; 
+    }
+     #sottopancia{
+         padding: 95px 0;}
+    .testo1{
+        border: 1px solid blue;
+    }
+    
+    .testo2{
+        font-size: 20px;
+    }
+    
+    #img_lavori_lifecasting{
+        background-position: 2em 0; 
+    }
+    
+    #img_lavori_mask{
+        background-position: -1em -3em; 
+    }
+    
+    #img_lavori_creature{
+        background-position:0em -35em;
+    }
+    
+    #img_lavori_props{
+        background-position: -25em 0em;
+    }
+    
+    #biografia{
+        height: 780px;
+    }
+    
+    #bio_cont_foto{
+        border: 0px solid yellow;
+    }
+
+    #bio_foto{
+        height: 550px;
+    }
+
+    #bio_testo{
+        border: 0px solid blue;
+        font-size: 21.5px;
+    }
+    
+    #art-work{
+        background-position:0 -30em;
+    }
+    
+    #contatti{
+        height: 680px;
+    }
+    
+    .form-control {
+        font-size: 1.2rem;
+    }
+
+    .b_left{
+        margin-left:60px;   
+    }
+    
+    .footer_social_img{
+    height: 45px;
+    }
+    
+}
+
+@media (min-width: 768px) and (max-width: 991px) { 
+    #contenitore{
+        height: 900px;
+    }
+    #immagine1 {
+        background-attachment: local;
+    }
+    
+    #video_box{display: none;}
+    #testo_sottop{
+        font-size:31px; 
+        text-align: center;
+    }
+    #sottopancia{
+        padding: 5% 0;
+    }
+    .testo1{
+        border: 1px solid yellow;
+        font-size: 25px;
+        margin-top: 7%;
+    }
+    .testo2{
+        font-size: 18px;
+    }
+    
+    .lavori_titolo{
+        font-size: 65px;
+    }
+    
+    #img_lavori_anatomia{
+        background-position:0 0; 
+    }
+    
+    #img_lavori_lifecasting{
+        background-image: url(../Images/copertina_lifecasting2.JPG);
+        background-position:0;
+    }
+    
+    #img_lavori_tattoo{
+        background-position:-25em 0; 
+    }
+    
+    #img_lavori_mask{
+        background-position: 0em 0em; 
+    }
+    
+    #img_lavori_creature{
+        background-position:0em 0em;
+    }
+    
+    #img_lavori_arredo{
+        background-image: url(../Images/copertina_arredo2.jpg);
+        background-position:0;
+    }
+    
+    #img_lavori_scenografie{
+        background-position:-25em 0em;
+    }
+    
+    #img_lavori_food{
+        background-position: -20em 0em;
+    }
+    
+    #img_lavori_props{
+        background-position: -13em 0em;
+    }
+    
+    .s_grande{
+        display: none;
+    }
+    
+    .s_piccolo{
+        display:block;
+        background-attachment:local;
+    }
+
+    #biografia{
+        height: 565px;
+    }
+
+    #titolo_biografia{
+        font-size: 40px;
+    }
+
+    #bio_cont_foto{
+        border: 0px solid yellow;
+    }
+
+    #bio_foto{
+        height: 400px;
+    }
+
+    #bio_testo{
+        padding-top: 0;
+        border: 0px solid blue;
+        font-size: 16px;
+    }    
+    
+    #art-work{
+        height: 400px;
+        background-position:0 -20em;
+    }
+    
+    #shop_art-work{
+        width: 500px;
+        margin-top: 100px;
+        
+    }
+    
+    #contatti{
+        height: 600px;
+    }
+    
+    #contatti_form{
+        font-size: 20px;  
+    }
+    
+   #invia{
+        font-size: 22px;
+        width: 180px;
+        height: 30px;
+        padding: 0.2rem 0.75rem;
+    }    
+    
+    #testo_contatti{
+        padding-top:9%;
+        font-size: 26px;
+    }
+    
+    .form-control {
+        font-size: 1rem;
+    }
+    
+    #footer{
+        height: 300px;
+
+    }
+
+    #footer_logo{
+        font-size: 20px;
+    }
+
+    #footer_logo_img{
+        height:27px; 
+    }
+
+    #footer_p{
+        margin-left: 30px;
+    }
+    
+    .footer_social_img{
+        height: 35px;
+    }
+
+    .b_left{
+        margin-left:40px;   
+    }
+
+    #footer_contatti{
+        font-size: 15px;
+    }
+    
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    #contenitore{
+        height: 800px;
+    }
+    #immagine1 {
+        background-attachment:local;
+    }
+    #video_box{display: none;}
+    
+     #testo_sottop{
+        font-size:29px; 
+        text-align: center;
+    }
+    #sottopancia{
+        padding: 0em 0;
+    }
+    .testo1{
+        border: 1px solid red;
+        font-size: 23px;
+        margin-top: 7%;
+    }
+    .testo2{
+        font-size: 16px;
+        margin-top: 8%;
+    }
+    
+    .lavori_titolo{
+        font-size: 50px;
+    }
+    
+    .galleria{
+        font-size:15px;
+    }
+    
+    
+    #img_lavori_anatomia{
+        background-position: 0; 
+    }
+    
+    #img_lavori_lifecasting{
+        background-image: url(../Images/copertina_lifecasting2.JPG);
+        background-position: -5em; 
+    }
+    
+    #img_lavori_tattoo{
+        background-position:-30em 0; 
+    }
+    
+    #img_lavori_mask{
+        background-position: -3em 0em; 
+    }
+    
+    #img_lavori_creature{
+        background-position:0em 0em;
+    }
+    
+    #img_lavori_arredo{
+        background-image: url(../Images/copertina_arredo2.jpg);
+        background-position: 0;
+    }
+    
+    #img_lavori_scenografie{
+        background-position:-28em 0em;
+    }
+    
+    #img_lavori_food{
+        background-position: -25em 0em;
+    }
+    
+    #img_lavori_props{
+        background-position: -17em 0em;
+    }
+
+    .s_grande{
+        display: none;
+    }
+    
+    .s_piccolo{
+        display:block;
+        background-attachment: local;
+    
+    }
+
+    #biografia{
+        height: 520px;
+    }
+
+    #titolo_biografia{
+        font-size: 38px;
+    }
+
+    #bio_cont_foto{
+        border: 0px solid yellow;
+        margin-right: -5em;
+    }
+
+    #bio_foto{
+        height: 380px;
+    }
+
+    #bio_testo{
+        margin-left: -5em;
+        padding-top: 0;
+        border: 0px solid blue;
+        font-size: 15.4px;
+    } 
+    
+    #art-work{
+        height: 300px;
+        background-position:0 -15em;
+    }
+    
+    #shop_art-work{
+        width: 500px;
+        margin-top: 70px;
+    }
+    
+    #testo1_art-work{
+        font-size:90px;
+        padding-top: 90px;
+    }
+
+    #testo2_art-work{
+        font-size: 15px;
+    
+    }
+    
+    #contatti{
+        height: 560px;
+    }
+    
+    #contatti_form{
+        font-size: 18px;  
+    }
+    
+   #invia{
+        font-size: 20px;
+        width: 160px;
+        height: 30px;
+        padding: 0.3rem 0.75rem;
+    }    
+    
+    #testo_contatti{
+        padding-top:4%;
+        font-size: 24px;
+}
+    
+    .form-control {
+        font-size: 0.8rem;
+    }
+    
+    #footer{
+        height: 250px;
+
+    }
+
+    #footer_logo{
+        font-size: 17px;
+    }
+
+    #footer_logo_img{
+        height:23px; 
+    }
+
+    #footer_p{
+        margin-left: 23px;
+    }
+    
+    .footer_social_img{
+        height: 25px;
+    }
+    
+    #footer_social{
+        margin-top:10px;    
+    }
+
+    .b_left{
+        margin-left:25px;   
+    }
+    
+    #footer_contatti{
+        font-size: 11px;
+    }
+    
+}
+
+@media screen and (max-width: 575px) {
+    
+    #immagine1 {
+        background-image: url(../Images/img-iniziale-mobile.jpg);
+        background-position:55px 0 -3em 0; 
+        height:60%;
+    }
+    
+    #contenitore {
+        height: 750px;    
+    }
+    
+    #logo-cp-grande{
+        display:none;
+    }
+    
+    #video_box{
+        display: none;
+    }
+    
+    #testo_sottop{
+        font-size: 20px; 
+        text-align: center;
+    }
+    
+    #sottopancia{
+        margin-top: 38px;
+        padding: 0px 10px;
+    }
+    
+    .testo1{
+        border: 0px solid red;
+        font-size: 18px;
+        margin-top: 3%;
+        padding: 0 5% 0 5%;
+    }
+    .testo2{
+        font-size: 16px;
+        margin-top: 3%;
+        padding: 0 5% 0 5%;
+    }
+    
+    .lavori_titolo{
+        font-size: 50px;
+    }
+    
+    .galleria{
+        
+        margin-top:-5px;
+        font-size:15px;
+    }
+    
+    .img_lavori_sx{
+        
+        width: 100%;
+        height: 150px;    
+        border: 0px solid blue;
+    }
+    
+    .img_lavori_dx{
+        
+        width: 100%;
+        height: 150px;    
+        border: 0px solid blue;
+    }
+    
+    .lavori{
+        height: 150px;
+    }
+    
+    .testo_lavori_dx{
+        display: none;
+    }
+    
+    .testo_lavori_sx{
+        display: none;
+    }
+    
+    .lavori_titolo{
+        padding-top: 20px; 
+    }
+    
+    #img_lavori_anatomia{
+        background-position: 0; 
+    }
+    
+    #img_lavori_lifecasting{
+        background-image: url(../Images/copertina_lifecasting2.JPG);
+        background-position: 0; 
+        line-height: 48px;
+    }
+    
+    #img_lavori_tattoo{
+        background-position: 0;
+        line-height: 48px;
+    }
+    
+    #img_lavori_mask{
+        background-position: 0em -4em;
+        line-height: 48px;
+    }
+    
+    #img_lavori_creature{
+        background-position:0em -8em;
+    }
+    
+    #img_lavori_arredo{
+        background-image: url(../Images/copertina_arredo2.jpg);
+        background-position: 0;
+    }
+    
+    #img_lavori_scenografie{
+        line-height: 48px;
+        background-position:0em 0em;
+    }
+    
+    #img_lavori_food{
+        line-height: 48px;
+        background-position: 0em -6em;
+    }
+    
+    #img_lavori_props{
+        background-position: 0em -5em;
+    }
+
+    .s_grande{
+        display: none;
+    }
+
+    .s_mobile{
+        display: block;    
+        background-attachment: local
+    }
+
+    #biografia{
+        height: 520px;
+    }
+
+    #titolo_biografia{
+        font-size: 38px;
+    }
+
+    #bio_cont_foto{
+        display: none;
+    }
+    
+    #bio_testo{
+        width: 100%;
+        text-align: center;
+        border: 0px solid blue;
+        font-size: 15.4px;
+    } 
+    
+    #art-work{
+        height: 150px;
+        background-position:0 -15em;
+    }
+    
+    #shop_art-work{
+        width: 300px;
+        margin-top: 30px;
+    }
+    
+    #testo1_art-work{
+        font-size:50px;
+        padding-top: 35px;
+    }
+
+    #testo2_art-work{
+        display:none;
+    
+    }
+    
+    #contatti{
+        height: 560px;
+    }
+    
+    #contatti_form{
+        font-size: 15px;  
+    }
+    
+   #invia{
+        font-size: 20px;
+        width: 160px;
+        height: 30px;
+        padding: 0.3rem 0.75rem;
+    }    
+    
+    #testo_contatti{
+        padding-top:4%;
+        font-size: 24px;
+}
+    
+    .form-control {
+        font-size: 0.8rem;
+    }
+    
+    #footer{
+        height: 250px;
+
+    }
+
+    #footer_logo{
+        font-size: 17px;
+    }
+
+    #footer_logo_img{
+        height:23px; 
+    }
+
+    #footer_p{
+        margin-left: 23px;
+    }
+    
+    .footer_social_img{
+        height: 25px;
+    }
+    
+    #footer_social{
+        margin-top:10px;    
+    }
+
+    .b_left{
+        margin-left:25px;   
+    }
+    
+    #footer_contatti{
+        font-size: 11px;
+    }
+    
+}
+}
+
+  
+
