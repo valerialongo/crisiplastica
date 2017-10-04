@@ -1,5 +1,0 @@
-Allora, se hai voglia leggi un po' come funziona git e scaricalo. qui c'è una guida: https://git-scm.com/book/it/v1/Basi-di-Git-Salvare-le-modifiche-sul-repository . A quanto ho capito alcune funzioni possono essere svolte dall'interfaccia web di github, altre no. 
-Inoltre sarebbe utile seguire uno di questi workflow: https://www.atlassian.com/git/tutorials/comparing-workflows
-Detto ciò, proviamo a caricare tutte le modifiche così, in modo da non doverlo fare all'ultimo minuto prima di consegnare. Ho creato delle cartelle in cui aggiungere i vari file, cerchiamo di essere ORDINATI e non mettere le cose a cazzo di cane GRAZIE. Dentro alcune cartelle ci sono già alcuni file jquery e bootstrap minificati, ultima versione, quindi usiamo quelli. 
-
-Stai diventando esattamente come cristina, la cosa mi fa quasi paura. 
