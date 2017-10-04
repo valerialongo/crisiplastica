@@ -1,8 +1,7 @@
-
   <?php
   session_start();
-include 'conn.php';
-  
+
+  require_once 'conn.php';
 if(isset($_SESSION['email'])){
     $email = $_SESSION['email'];
 }
@@ -47,22 +46,35 @@ else{
     
 ?>
 
-
-
-
-
-
-
-
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Crisiplastica</title>
+<html lang="it">
+    
+    
+  <head>
+    <!-- Required meta tags -->
+    <title>Crisiplastica</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400" rel="stylesheet">
+    <!-- Bootstrap CSS
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+    integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/crisiplastica_s.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script src="js/jquery.stellar.min.js"></script> 
+    <link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox.css">
+      <script src="fancybox/jquery.fancybox.js"></script>
 
-  <script src="js/jquery-1.10.1.js"></script>
+<script type="text/javascript">
+   $("a.thumb").fancybox();
+</script>
+    
+      <style type="text/css">
+          #art_shop{width: 20%;}
+      </style>
 
-
-  <script>
+  <script type="text/javascript">
   $(document).ready(function(e) {
 
     $("#svuotacarrello").click(function(event) {
@@ -73,32 +85,50 @@ else{
   });
 
   </script>
+    
 </head>
-<body>
-
-
-<a href="index.php">Crisiplastica</a>
-    <div>
-      <button  type="submit"><a href="registrati.php">Registrati</a></button>
-      <button  type="submit"><a href="login.php">Login</a></button>
-    </div>
-    <div>
-       <form  role="search" action="ricerca.php" method="post">
-          <input name="ricerca" type="text" class="form-control" placeholder="Cerca">
-          <button  type="submit">Cerca</button>  
-      </form>
-    </div>
-    <div>
-     
-         <p style="text-align: right;"> Bentornato <?php echo $name; ?></p>
- <p style="text-align: right;"> Non sei <?php echo $name; ?>?<a href="logout.php"> esci</a></p>
-        <p>         
+    
+    
+    
+  <body style="height:100%;">
       
-    </div>
-
-
-            <div >
-              <h3>Carrello</h3>
+        <script>
+            jQuery(document).ready(function ($) {
+            $(window).stellar();
+            });
+        </script>
+      
+      
+<!-- Barra di navigazione -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <img src="Images/logoCrisiplastica.png" height="30" alt="logo-crisiplastica">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+ <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      
+  
+            <button class="btn btn-outline-success my-2 my-sm-0 search_btn" type="submit"><img src="Images/schifanella/carrello.png" height="25" alt="search_logo" href="carrello.php"(<?php echo count($carrello) ?>)> </button>
+      
+ <p style="text-align: right;"> Non sei <?php echo $name; ?>?<a href="logout.php"> esci</a></p>
+           
+        
+        </div>
+    
+    </nav>
+<!-- Fine Barra di navigazione --> 
+ 
+<!-- fascia testo + video -->
+      <header id="contenitore" class="container-fluid">
+          
+            
+            <div class="container" id="sottopancia">
+                <div class="row">
+                    <div class="col" id="testo_sottop" style="border:0px solid blue;">   
+                        
+                        <!-- da qui -->
+                        <div class="container">
+                         <h1>Carrello</h1>
             </div>
             <?php
             $connessione = new mysqli("localhost","root","root","prova");
@@ -110,7 +140,7 @@ else{
               if (!($risultato = $connessione->query($query_carrello)))
                 die("Query su carrello fallita!");
 
-              echo '<table>';
+              echo '<table class=" table table-striped" style="font-size:20px;">';
               echo '<thead>';
               echo '<tr>';
               echo '<th> </th>';
@@ -130,7 +160,7 @@ else{
                 $totale=$totale+$prezzo;
 
                 echo "<tr>";
-                echo "<td>$i</td>";
+                echo "<td></td>";
                 echo "<td>$nome</td>";
                 echo "<td>$note_realizzazione</td>";            
                 echo "<td>$prezzo euro</td>";
@@ -140,22 +170,78 @@ else{
               }
               echo "</tbody>";
               echo "</table>";
-              echo "<p>Totale: $totale euro</p>";
+              echo "<div class='container'>";  
+              echo "<br><p>Totale: $totale euro</p>";
               echo "<input type='hidden' name='totale' value='".$totale."'/>";
-              echo "<button class='btn btn-primary' type='submit'>Ordina adesso!</button>";
-              echo "<button class='btn' type='button' id='svuotacarrello'>Svuota il carrello</button>";
+            echo "</div>";
+                echo "<div class='container'>";  
+              echo "<br><button class='btn btn-primary' type='submit'>Ordina adesso!</button>";
+              echo "<br><button class='btn btn-primary' type='button' id='svuotacarrello'>Svuota il carrello</button>";
               echo "</form>";
-
+                echo "</div>";
               
             } else {
               echo "<p>Il tuo carrello &egrave; vuoto!</p>";
             }
             ?>
-
+                    </div>
             
-          
+                        
+                        <!--a qui -->
+                    </div>
+                    
+                    </div>
+                </div>
+            
+      </header>
+<!-- fine fascia testo + video -->
       
 
- 
-</body>
+     
+<!-- footer -->
+      
+      <footer>
+        <div class="container_fluid" id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col" id="footer_logo" style="border: 0px solid red">
+                        <img id="footer_logo_img" src="Images/logoCrisiplastica.png" alt="logo-crisiplastica">
+                        <p style="margin-top:8px; margin-left:0;">by <b>Cristina Accettulli</b></p>
+                    </div>
+                    <div class="col" id="footer_contatti">
+                        <div id="footer_cornice_contatti">
+                            <p id="footer_p">phone: <b class="b_left"> +39 347 05 07 768 </b> <br />
+                            email: <b class="b_left"> cristinaaccettulli@gmail.com </b> </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col" style="border: 0px solid green">
+                        
+                    </div>
+                    <div class="col" id="footer_social" style="border: 0px solid yellow">
+                        <a href="https://www.facebook.com/Crisiplastica/"><img class="footer_social_img" src="Images/facebook.png" alt="link_facebook_page"></a>
+                        <a href="https://www.instagram.com/crisiplastica/" style="margin-right:30px; margin-left:30px";><img src="Images/instagram.png" class="footer_social_img" alt="link_instagram_page"></a>
+                        <a href="https://www.youtube.com/channel/UCwSWNPoReBodEkhLW95v3vA"><img src="Images/you_tube.png" class="footer_social_img" alt="link_youtube_page"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </footer>
+
+<!-- fine footer -->
+      
+      
+
+      
+      
+      
+      
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  </body>
 </html>
